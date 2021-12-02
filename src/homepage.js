@@ -8,12 +8,12 @@ function initHomeContent() {
 
     const header = document.createElement('h1');
     header.innerHTML = "Cafe Mock";
-    header.classList.add("header");
+    header.classList.add("homepage-header");
     overlay.appendChild(header);
 
     const description = document.createElement('p');
     description.innerHTML = "Insert amazing description here";
-    description.classList.add("description");
+    description.classList.add("homepage-description");
     overlay.appendChild(description);
 }
 
