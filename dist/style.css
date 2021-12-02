@@ -28,6 +28,8 @@ body {
     top: 0;
     left: 0;
 
+    gap: 50px;
+
     background: rgba(0, 0, 0, 0.4);
     color: white;
     
@@ -37,12 +39,40 @@ body {
     align-items: center;
 }
 
-.header {
-    font-size: 40px;
-    margin: 0; /* don't know why body margin isn't being applied*/
+div.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.description {
+h1.homepage-header,
+h1.menu-item  {
+    font-size: 50px;
+    margin: 0px; /* don't know why body margin isn't being applied*/
+}
+
+h2.menu-item {
+    font-size: 35px;
+    margin: 0px; /* don't know why body margin isn't being applied*/
+}
+
+p.homepage-description,
+ p.menu-item {
     font-size: 20px;
     text-align: center;
+    margin: 0px; /* don't know why body margin isn't being applied*/
+    max-width: 400px;
+    word-wrap: break-word;
 }
+
+hr.menu-item {
+    width: 400px;
+    height: 2px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0px; /* don't know why body margin isn't being applied*/
+}
+
