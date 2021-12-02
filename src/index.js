@@ -6,7 +6,8 @@ init();
 function init() {
     console.log("init()");
     initTemplate();
-    initHomeContent();
+    // initHomeContent();
+    initMenuContent();
 }
 
 function initTemplate() {
