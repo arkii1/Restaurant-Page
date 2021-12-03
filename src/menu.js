@@ -1,39 +1,39 @@
 function initMenuContent() {
     console.log("initMenuContent()");
-    const overlay = document.querySelector('.overlay');
-    if(overlay == null) {
+    const page = document.querySelector('.page');
+    if(page == null) {
         console.error("overlay is null");
         return;
     }  
-    createMenu(overlay);
+    createMenu(page);
 }
 
 
-function createMenu(overlay) {
-    appendHeader(overlay);
+function createMenu(page) {
+    appendHeader(page);
 
-    appendDivider(overlay);
+    appendDivider(page);
 
     const item1Header = 'The Boss Breakfast';
     const item1Description = 'Bacon, sausage, hog’s pudding, mushrooms, hash browns, roasted tomato, baked beans,scrambled eggs, two slices of toast.';
     const item1Price = '£12.85';
-    appendMenuItem(item1Header, item1Description, item1Price, overlay);
+    appendMenuItem(item1Header, item1Description, item1Price, page);
 
-    appendDivider(overlay);
+    appendDivider(page);
 
     const item2Header = 'The Veggie Boss';
     const item2Description = 'Scrambled eggs, hash browns, sweetcorn fritter, roasted tomato, mushroom, seasonal greens, baked beans, two slices of toast.';
     const item2Price = '£11.85';
-    appendMenuItem(item2Header, item2Description, item2Price, overlay);
+    appendMenuItem(item2Header, item2Description, item2Price, page);
 
-    appendDivider(overlay);
+    appendDivider(page);
 
     const item3Header = 'The Vegan Boss';
     const item3Description = 'Scrambled tofu, hash browns, sweetcorn fritter, roasted tomato, mushrooms, seasonal greens, baked beans, two slices of toast.';
     const item3Price = '£11.85';
-    appendMenuItem(item3Header, item3Description, item3Price, overlay);
+    appendMenuItem(item3Header, item3Description, item3Price, page);
 
-    appendDivider(overlay);
+    appendDivider(page);
 }
 
 function appendHeader(overlay) {
